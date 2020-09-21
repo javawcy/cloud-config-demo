@@ -4,3 +4,5 @@ spring:
       routes:
       - id: config-server
         uri: lb://config-server1:8080
+        predicates:
+        - Path=/config/**
