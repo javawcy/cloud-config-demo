@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: config-server
+        uri: lb://config-server1:8080
