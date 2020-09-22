@@ -5,6 +5,6 @@ spring:
       - id: config-server
         uri: lb://config-server:8080
         predicates:
-        - Path=/config/**
+        - Path=/config1/**
         filters:
         - StripPrefix=1
