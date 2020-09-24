@@ -1,9 +1,3 @@
-security:
-  oauth2:
-    resource:
-      id: server-demo1
-      user-info-uri: http://oauth2-server/oauth2/current
-      service-id: oauth2-server
 spring:
   rabbitmq:
     username: guest
