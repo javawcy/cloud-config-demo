@@ -18,3 +18,9 @@ spring:
         - Path=/config/**
         filters:
         - StripPrefix=1
+      - id: auth-server
+        uri: lb://oauth2-server:8080
+        predicates:
+        - Path=/auth-server/**
+        filters:
+        - StripPrefix=1
