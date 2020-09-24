@@ -24,3 +24,7 @@ spring:
         - Path=/auth-server/**
         filters:
         - StripPrefix=1
+      - id: server-demo1
+        uri: lb://server-demo1:8080
+        predicates:
+        - Path=/demo1/**
