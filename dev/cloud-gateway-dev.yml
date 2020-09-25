@@ -28,3 +28,7 @@ spring:
         uri: lb://server-demo1:8080
         predicates:
         - Path=/demo1/**
+
+app:
+  jwt:
+    signKey: test

@@ -14,3 +14,7 @@ spring:
     url: jdbc:mysql://192.168.10.122:3306/oauth2_demo
     username: root
     password: 123456
+
+app:
+  jwt:
+    signKey: test
