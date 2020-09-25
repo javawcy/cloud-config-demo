@@ -22,10 +22,6 @@ spring:
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
-      - id: config-server
-        uri: lb://config-server:8080
-        predicates:
-        - Path=/config/**
       - id: auth-server
         uri: lb://oauth2-server:8080
         predicates:
