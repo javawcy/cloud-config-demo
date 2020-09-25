@@ -11,6 +11,16 @@ spring:
     password: 123456
   cloud:
     gateway:
+      enabled: true
+      httpclient:
+        connect-timeout: 3000
+        response-timeout: 15s
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
       routes:
       - id: config-server
         uri: lb://config-server:8080
