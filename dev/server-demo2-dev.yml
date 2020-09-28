@@ -1,0 +1,19 @@
+security:
+  oauth2:
+    resource:
+      id: server-demo2
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.10.124
+    port: 5672
+  redis:
+    database: 9
+    host: 192.168.10.113
+    port: 6379
+    password: 123456
+
+app:
+  jwt:
+    signKey: test-demo
