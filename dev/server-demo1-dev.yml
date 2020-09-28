@@ -13,7 +13,7 @@ spring:
 security:  
   oauth2:  
     resource:  
-      id: demo2
+      id: demo1
 
 app:
   jwt:
