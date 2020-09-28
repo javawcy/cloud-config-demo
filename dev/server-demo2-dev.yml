@@ -9,3 +9,6 @@ spring:
     host: 192.168.10.113
     port: 6379
     password: 123456
+app:
+  jwt:
+    signKey: test-demo
