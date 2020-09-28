@@ -10,11 +10,6 @@ spring:
     port: 6379
     password: 123456
 
-security:  
-  oauth2:  
-    resource:  
-      id: demo2
-
 app:
   jwt:
     signKey: test-demo
