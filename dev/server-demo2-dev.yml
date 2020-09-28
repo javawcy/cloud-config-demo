@@ -13,7 +13,7 @@ spring:
     baseUrl: http://zipkin-server:9411/
   sleuth:
     sampler:
-      percentage: 1.0
+      percentage: 0.1
 
 logging:
   level:
