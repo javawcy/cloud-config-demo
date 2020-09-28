@@ -38,6 +38,10 @@ spring:
         uri: lb://service-demo1:8080
         predicates:
         - Path=/demo1/**
+      - id: server-demo2
+        uri: lb://service-demo2:8080
+        predicates:
+        - Path=/demo2/**
 
 app:
   jwt:
